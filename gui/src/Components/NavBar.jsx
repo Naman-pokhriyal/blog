@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Styles/theme.css";
 import "../Styles/NavBar.css";
 import Logo from "../Image/Logo.png";
@@ -13,7 +14,11 @@ export default function NavBar() {
       localStorage.setItem("theme", "light");
     }
   }
-  function showNav(params) {}
+
+  function showNav(params) {
+    const navTab = document.getElementById("nav-tap");
+    navTab.classList.toggle("hide-tab");
+  }
 
   return (
     <nav>
@@ -39,6 +44,23 @@ export default function NavBar() {
           </div>
         </li>
       </ul>
+      <div id="nav-tap" className="hide-tab">
+        <ul className="tab-list">
+          <Link to="/">
+            <li onClick={showNav} className="tab-link">
+              HOME
+            </li>
+          </Link>
+          <Link to="/cards">
+            <li onClick={showNav} className="tab-link">
+              BLOGS
+            </li>
+          </Link>
+          <Link to="/home/#contact-wrapper">
+            <li onClick={showNav} className="tab-link"></li>
+          </Link>
+        </ul>
+      </div>
     </nav>
   );
 }

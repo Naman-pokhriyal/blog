@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <div className="wrapper">
       <div className="welcome-wrapper">
-        <p className="welcome">Welcome</p>
+        <p className="welcome"> Welcome</p>
         <p className="welcome-text">Hello Programmer...</p>
         <p className="welcome-text">
           This is my Blog Page for sharing my knowledge and love for programming
@@ -93,7 +93,7 @@ export default function Home() {
           <img src={web} alt="Website" />
         </a>
       </div>
-      <section className="contact-wrapper">
+      <section id="contact-wrapper">
         <p className="contact-text">Get in touch?</p>
         <form
           id="my-form"
