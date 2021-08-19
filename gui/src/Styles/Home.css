@@ -1,0 +1,122 @@
+.wrapper {
+  width: 100%;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  font: bold 44px "Cairo";
+  text-align: center;
+}
+.about {
+  font: bold 30px "Cairo";
+  text-align: center;
+  color: var(--fontTwo);
+}
+.follow {
+  font: bold 18px "Cairo";
+  color: var(--fontTwo);
+}
+.welcome-text {
+  margin: 10px 20px;
+  font-weight: bold;
+}
+.welcome-wrapper {
+  min-height: 340px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: var(--panel);
+  border-radius: 10px;
+}
+.about-text {
+  margin: 10px 20px;
+}
+.about-wrapper {
+  min-height: 340px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: var(--panel);
+  border-radius: 10px;
+}
+.follow-wrapper {
+  min-height: 50px;
+  width: 80%;
+  display: flex;
+  padding: 20px 10px 10px 10px;
+  background-color: var(--panel);
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.follow-wrapper img {
+  width: 50px;
+  height: 50px;
+}
+.contact-wrapper {
+  width: 80%;
+  height: 39pc;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 40px;
+  background-color: var(--panel);
+  border-radius: 10px;
+  align-items: center;
+}
+.contact-text {
+  font: bold 30px "Cairo";
+  margin-bottom: 20px;
+}
+
+#my-form {
+  width: 80%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group input,
+textarea {
+  font-size: 18px;
+  padding: 5px;
+  resize: vertical;
+}
+.sub-btn {
+  margin: 10px;
+  margin-left: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: rgb(32, 32, 32);
+}
+.sub-btn:hover {
+  background-color: rgb(188, 149, 252);
+  border: 1px solid black;
+  box-shadow: 0 5px 0px 0px rgb(0, 0, 0);
+}
+.sub-btn:focus {
+  margin-top: 13px;
+  background-color: rgb(188, 149, 252);
+  border: 1px solid black;
+  box-shadow: 0 2px 0px 0px rgb(0, 0, 0);
+  transition: 0.1s;
+}
+#my-form-status {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.hide {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
