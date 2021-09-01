@@ -1,0 +1,38 @@
+#cards {
+  padding: 20px;
+}
+.list-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+.list-group li {
+  background-color: var(--panel);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 200px;
+  box-shadow: 10px 10px 5px 0px var(--shadow);
+}
+.title {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid var(--fontOne);
+}
+.image {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid var(--fontOne);
+  border-bottom: 1px solid var(--fontOne);
+}
+.image img {
+  width: 70%;
+  max-width: 200px;
+}
+.card-content {
+  border-top: 1px solid var(--fontOne);
+}
+.desc {
+  line-height: 25px;
+}

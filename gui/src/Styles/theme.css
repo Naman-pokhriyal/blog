@@ -1,6 +1,6 @@
 [data-theme="light"] {
   --fontOne: #000;
-  --fontTwo: #fff;
+  --shadow: rgba(255, 255, 255, 0.5);
   --bg: #572b9f;
   --panel: #fff;
   --switch-o: #000;
@@ -8,7 +8,7 @@
 }
 [data-theme="dark"] {
   --fontOne: #fff;
-  --fontTwo: #fff;
+  --shadow: rgba(87, 43, 159, 0.5);
   --bg: #000;
   --panel: #572b9f;
   --switch-o: #fff;
