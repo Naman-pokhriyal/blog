@@ -7,7 +7,7 @@ export default function Cards() {
   const [cardLi, setCardLi] = useState([]);
 
   useEffect(() => {
-    Axios.get("https://git.heroku.com/project-blogs.git/cards").then((res) => {
+    Axios.get("https://project-blogs.herokuapp.com/cards").then((res) => {
       console.log(res.data.list);
       if (res.data.list.length) {
         setCardLi(res.data.list);

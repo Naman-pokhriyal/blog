@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+require("dotenv").config();
 
 mongoose
   .connect(
@@ -17,7 +18,7 @@ app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://hardcore-pike-0295f9.netlify.app/"],
     methods: ["GET", "POST"],
     credentials: true,
   })
@@ -42,4 +43,4 @@ app.get("/cards", async (req, res) => {
   });
 });
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);

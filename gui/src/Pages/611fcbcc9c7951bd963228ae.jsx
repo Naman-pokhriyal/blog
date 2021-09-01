@@ -6,7 +6,7 @@ export default function A611fcbcc9c7951bd963228ae() {
   const [cards, setcards] = useState();
   // let [selected, setselected] = useState();
   useEffect(() => {
-    Axios.get("https://git.heroku.com/project-blogs.git/cards").then((res) => {
+    Axios.get("https://project-blogs.herokuapp.com/cards").then((res) => {
       console.log(res.data.list);
       if (res.data.list.length) {
         setcards(res.data.list);
