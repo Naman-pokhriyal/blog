@@ -4,9 +4,9 @@ import Axios from "axios";
 export default function A611fcbcc9c7951bd963228ae() {
   const info = window.location.pathname;
   const [cards, setcards] = useState();
-  let [selected, setselected] = useState();
+  // let [selected, setselected] = useState();
   useEffect(() => {
-    Axios.get("http://localhost:3001/cards").then((res) => {
+    Axios.get("https://git.heroku.com/project-blogs.git/cards").then((res) => {
       console.log(res.data.list);
       if (res.data.list.length) {
         setcards(res.data.list);
@@ -23,7 +23,7 @@ export default function A611fcbcc9c7951bd963228ae() {
   return (
     <>
       <div>{info}</div>
-      <div>{selected}</div>
+      {/* <div>{selected}</div> */}
     </>
   );
 }
